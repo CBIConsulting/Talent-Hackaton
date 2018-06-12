@@ -1,8 +1,25 @@
-Bienvenidos a **CBI Talent Hackaton**.
+# Bienvenidos a **CBI Talent Hackaton**.
 
-# PREGUNTAS de SQL
+![Awesome](https://img.shields.io/badge/CBI-awesome-blue.svg)
+
+Hola a todos! Las normas de esta prueba son las siguientes:
+
+* Puedes buscar en internet todo lo que quieras, no te vamos a juzgar.
+* Para cualquier duda sobre enunciados o normas puedes preguntar al orientador de la prueba.
+* Normalmente nos gusta el trabajo en equipo, pero en esto mejor cada cual a lo suyo.
+* Que el codigo funcione es importante, pero tambien valoramos:
+
+  * Que tu codigo sea elegante, bien estructurado y legible.
+  * Buena optimizacion de tus algoritmos.
+  * Capacidad de explicar tu proceso logico
+* Para esta prueba contaras con aproximadamente 2 horas.
+
+
+# Problemas de SQL
 
 ## Pregunta 1
+
+![Difficulty](https://img.shields.io/badge/Difficulty-easy-green.svg) ![Time](https://img.shields.io/badge/Time-15min-blue.svg) ![Lang](https://img.shields.io/badge/Language-SQL-yellow.svg)
 
 Dada las siguientes tablas:
 
@@ -24,14 +41,16 @@ CREATE  TABLE IF NOT EXISTS `RP`.`USER` (
 )
 ```
 
-Crear una consulta que obtenga de forma unica todos los usuarios que SON amigos del usuario con `User_oid = 323`.
+Crear una consulta que obtenga de forma unica todos los usuarios que **SON** amigos del usuario con `User_oid = 323`.
 
 ### Notas:
-  1. La amistad de un usuario viene determinada por el estado de `Pending` y `Accepted`
-  2. El usuario de entrada, puede estar tanto en el campo `FRIENDSHIP.User_oid` como `FRIENDSHIP.User_oidb`
-  3. En la lista resultado no debe aparecer el User_oid = 323
+  1. La amistad de un usuario viene determinada por el estado de `Pending` y `Accepted`.
+  2. El usuario de entrada, puede estar tanto en el campo `FRIENDSHIP.User_oid` como `FRIENDSHIP.User_oidb`.
+  3. En la lista resultado no debe aparecer el `User_oid = 323`.
 
 ## Pregunta 2
+
+![Difficulty](https://img.shields.io/badge/Difficulty-easy-green.svg) ![Time](https://img.shields.io/badge/Time-20min-blue.svg) ![Lang](https://img.shields.io/badge/Language-SQL-yellow.svg)
 
 Dada la siguiente consulta:
 
@@ -49,12 +68,13 @@ Realiza una consulta similar, pero optimizando lo máximo posible su rendimiento
 
 
 
-# Ejercicios de Programación 
+# Problemas de Programación 
 
 En esta seccion cualquier lenguaje esta permitido. 
 
 ## Pregunta 1
 
+![Difficulty](https://img.shields.io/badge/Difficulty-medium-orange.svg) ![Time](https://img.shields.io/badge/Time-30min-blue.svg) ![Lang](https://img.shields.io/badge/Language-any-yellow.svg)
 
 A Pedro el pastelero le gusta hacer pasteles. Tiene algunas recetas e
 ingredientes. Desgraciadamente, no se le dan bien las matemáticas. ¿Le
@@ -80,6 +100,8 @@ cakes(['apples' => 3, 'flour' => 300, 'sugar' => 150, 'milk' => 100, 'oil' => 10
 ```
 
 ## Pregunta 2
+
+![Difficulty](https://img.shields.io/badge/Difficulty-hard-red.svg) ![Time](https://img.shields.io/badge/Time-¯\\_(ツ)_/¯-blue.svg) ![Lang](https://img.shields.io/badge/Language-any-yellow.svg)
 
 ¡El GPS se ha roto y tenemos que llegar a un sitio!
 
