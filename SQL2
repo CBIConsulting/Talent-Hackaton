@@ -1,0 +1,18 @@
+## Pregunta 2
+
+![Difficulty](https://img.shields.io/badge/Difficulty-easy-green.svg) ![Time](https://img.shields.io/badge/Time-20min-blue.svg) ![Lang](https://img.shields.io/badge/Language-SQL-yellow.svg)
+
+Dada la siguiente consulta:
+
+```sql
+SELECT C.Field, C.Foreign_key, C.Lang_id, C.Content, C.App_oid, L.Code, L.Locale, L.Untranslated
+  FROM I18N.CONTENT C, I18N.LANG_APP LA, I18N.LANGUAGE L
+  WHERE C.Schema = 'DATA' AND C.Table = 'MYTABLE' AND C.Foreign_key = 43255
+    AND (C.App_oid = 40 OR C.App_oid IS NULL)
+    AND LA.App_oid = 40
+    AND LA.Lang_id = C.Lang_id
+    AND L.Lang_id = C.Lang_id;
+```
+
+Realiza una consulta similar, pero optimizando lo máximo posible su rendimiento 
+(tuning para Motor MySQL)

@@ -1,0 +1,31 @@
+## Pregunta 1
+
+![Difficulty](https://img.shields.io/badge/Difficulty-easy-green.svg) ![Time](https://img.shields.io/badge/Time-15min-blue.svg) ![Lang](https://img.shields.io/badge/Language-SQL-yellow.svg)
+
+Dada las siguientes tablas:
+
+```sql
+CREATE  TABLE IF NOT EXISTS `RP`.`FRIENDSHIP` (
+  `Friendship_id` BIGINT NOT NULL,
+  `User_oid` BIGINT NOT NULL ,
+  `User_oidb` BIGINT NOT NULL ,
+  `Pending` TINYINT(1) DEFAULT 1,
+  `Accepted` DATETIME DEFAULT NULL
+)
+```
+
+```sql
+CREATE  TABLE IF NOT EXISTS `RP`.`USER` (
+  `User_oid` BIGINT NOT NULL ,
+  `Active` TINYINT(1) NOT NULL DEFAULT 1,
+  `Username` VARCHAR(25) NULL
+)
+```
+
+Crear una consulta que obtenga de forma unica todos los usuarios que **SON** amigos 
+del usuario con `User_oid = 323`.
+
+### Notas:
+  1. La amistad de un usuario viene determinada por el estado de `Pending` y `Accepted`.
+  2. El usuario de entrada, puede estar tanto en el campo `FRIENDSHIP.User_oid` como `FRIENDSHIP.User_oidb`.
+  3. En la lista resultado no debe aparecer el `User_oid = 323`.
