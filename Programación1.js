@@ -27,10 +27,12 @@ function cakes(rec, ingr) {
   var needed=Object.keys(rec)
   console.log("\nI need "+needed+".\n")
 
-  return needed.reduce(function(acc, curr){
+  return needed.reduce(function(sum, current){
 
-    return Math.min(Math.floor(ingr[curr] / rec[curr]),acc);
-})
+    /*Vamos dividiendo y redondeando hacia abajo para no devolver decimales, 
+    y teniendo en cuenta qué necesitamos para la hacer el pastel*/
 
+    return Math.min(Math.floor(ingr[current] / rec[current]||0),sum);
+    }, Infinity)
 
 }
